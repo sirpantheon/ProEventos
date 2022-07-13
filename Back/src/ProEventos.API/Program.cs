@@ -1,3 +1,7 @@
+using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
+using ProEventos.API.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -23,3 +27,28 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public class Startup
+{
+    public Startup(IConfiguration configuration){
+        Configuration = configuration;
+    }
+
+    public IConfiguration Configuration { get; }
+    public void ConfigureServices(IServiceCollection services)
+        => services.AddDbContext<DataContext>(
+            context => context.UseSqlite(Configuration.GetConnectionString("Default"))
+        );
+
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    {
+    }
+}
+
+public class ApplicationDbContext : DbContext
+{
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        : base(options)
+    {
+    }
+}

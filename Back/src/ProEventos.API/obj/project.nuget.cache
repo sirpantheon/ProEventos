@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+nBfVBBhnOyhLdBMXhumXcVXNveNZCvuLISXUfzYK2lvzMitmimBb8zYvUyLSb3U5OHISjatllUd8QMQrsxp6g==",
+  "dgSpecHash": "3cg2MLmavEi3Iyt1i+Dr/xIs+J7S1cJJkGiuGmmNI45M1YDzhxkFa+ec3R/gzBJC6zUt52CNby7mw54f1+DxYw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\SirPantheon\\OneDrive\\Documentos\\GitHub\\CSharp\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
+  "projectFilePath": "C:\\Users\\SirPantheon\\OneDrive\\Documentos\\GitHub\\CSharp\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SirPantheon\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\SirPantheon\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.7\\microsoft.data.sqlite.core.6.0.7.nupkg.sha512",
